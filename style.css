@@ -97,7 +97,8 @@ body {
   @media only screen and (max-width: 750px) {
     .header {
       margin-bottom: 30rem;
-      grid-row: 2 / 4; } }
+      grid-column: center-start / -2;
+      text-align: center; } }
   @media only screen and (max-width: 500px) {
     .header {
       margin-bottom: 45rem; } }
@@ -106,7 +107,8 @@ body {
     margin-top: 15rem; }
     @media only screen and (max-width: 750px) {
       .header__content {
-        margin-top: 25rem; } }
+        margin-top: 25rem;
+        text-align: center; } }
     .header__content-text {
       font-size: 12rem;
       font-family: "Montserrat", sans-serif;
@@ -128,9 +130,9 @@ body {
       @media only screen and (max-width: 450px) {
         .header__content-text {
           font-size: 6rem; } }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 340px) {
         .header__content-text {
-          font-size: 4rem; } }
+          font-size: 5rem; } }
       .header__content-text--1 {
         font-size: 5rem;
         letter-spacing: 1.5rem;
@@ -155,13 +157,18 @@ body {
             font-size: 2.2rem; } }
         @media only screen and (max-width: 400px) {
           .header__content-text--1 {
-            font-size: 2rem;
-            margin-top: 1.5rem; } }
+            font-size: 1.5rem; } }
+        @media only screen and (max-width: 340px) {
+          .header__content-text--1 {
+            font-size: 1.3rem; } }
   .header__btn {
     margin-top: 4rem;
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+    @media only screen and (max-width: 750px) {
+      .header__btn {
+        justify-content: center; } }
     .header__btn-btn {
       color: #ffffff;
       font-family: "Montserrat", sans-serif;
