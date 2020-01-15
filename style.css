@@ -96,7 +96,8 @@ body {
   margin-bottom: 20rem; }
   @media only screen and (max-width: 750px) {
     .header {
-      margin-bottom: 30rem; } }
+      margin-bottom: 30rem;
+      grid-row: 2 / 4; } }
   @media only screen and (max-width: 500px) {
     .header {
       margin-bottom: 45rem; } }
