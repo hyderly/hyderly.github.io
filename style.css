@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: inherit; }
 
+.module {
+  scroll-behavior: smooth; }
+
 html {
   font-size: 10px;
   box-sizing: border-box; }
