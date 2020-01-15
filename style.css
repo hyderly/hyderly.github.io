@@ -7,7 +7,8 @@
 
 html {
   font-size: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 1200px) {
     html {
       font-size: 9px; } }
