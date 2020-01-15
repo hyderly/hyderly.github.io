@@ -22,6 +22,11 @@ $smallest-bp: 500px;
 }
 
 
+// .module {
+//     scroll-behavior: smooth;
+//   }
+
+
 html{
     font-size: 10px;  // 1rem  = 10px
     box-sizing: border-box;
@@ -146,11 +151,14 @@ body{
 .header{
     grid-column: center-start / center-end;
     grid-row : 2 / 3;
-    // margin-top: 5rem;
     margin-bottom: 20rem;
+    height: 80vh;
+
 
     @media only screen and(max-width: $medium2-bp){
         margin-bottom: 30rem;
+        grid-column: center-start / -2;
+        text-align: center;
     }
 
     @media only screen and(max-width: $smallest-bp){
@@ -162,15 +170,13 @@ body{
         line-height: 1.2;
         margin-top: 15rem;
 
+        
+
         @media only screen and(max-width: $medium2-bp){
             margin-top: 25rem;
+            text-align: center;
         }
 
-        @media only screen and(max-width: $small-bp){
-            margin-top: 40rem;
-        }
-
-        
 
 
         &-text{
@@ -200,9 +206,11 @@ body{
                 font-size: 6rem;
             }
 
-            @media only screen and(max-width: 400px){
-                font-size: 4rem;
+            @media only screen and(max-width: 340px){
+                font-size: 5rem;
             }
+
+            
 
             
 
@@ -235,8 +243,11 @@ body{
                 }
 
                 @media only screen and(max-width: 400px){
-                    font-size: 2rem;
-                    margin-top: 1.5rem;
+                    font-size: 1.5rem;
+                }
+
+                @media only screen and(max-width: 340px){
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -248,6 +259,11 @@ body{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+
+        @media only screen and(max-width: $medium2-bp){
+            justify-content: center;
+        }
 
         &-btn{
             color: $color-white;
@@ -295,6 +311,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
     }
 
     &-2{
