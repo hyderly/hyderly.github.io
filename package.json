@@ -1,0 +1,18 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "hyder personal portfolio",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass main.scss style.css -w"
+  },
+  "author": "hyder",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "jump.js": "^1.0.2",
+    "sal.js": "^0.7.1"
+  }
+}
