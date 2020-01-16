@@ -33,7 +33,9 @@ body {
   line-height: 1.7;
   width: 100%;
   background-color: #222;
-  height: 100%; }
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; }
 
 .conatiner {
   display: grid;
@@ -51,6 +53,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 8rem;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(33, 33, 33, 0.8);
@@ -98,7 +101,9 @@ body {
   grid-column: center-start / center-end;
   grid-row: 2 / 3;
   margin-bottom: 20rem;
-  height: 80vh; }
+  height: 80vh;
+  padding: 8rem 0 0 0;
+  scroll-snap-align: start; }
   @media only screen and (max-width: 750px) {
     .header {
       margin-bottom: 30rem;
@@ -218,7 +223,10 @@ body {
 .about {
   grid-column: center-start / center-end;
   grid-row: 3 / 4;
-  text-align: center; }
+  text-align: center;
+  height: 80vh;
+  padding: 8rem 0 0 0;
+  scroll-snap-align: start; }
   .about__text {
     margin-top: 5rem;
     font-size: 2rem;
@@ -233,7 +241,8 @@ body {
 .project {
   grid-column: center-start / center-end;
   grid-row: 4 / 5;
-  margin-top: 30rem; }
+  padding: 8rem 0 0 0;
+  scroll-snap-align: start; }
   .project__box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -302,7 +311,8 @@ body {
 .contact {
   grid-column: center-start / center-end;
   grid-row: 9 / 10;
-  margin: 20rem 0 10rem 0; }
+  margin: 20rem 0 10rem 0;
+  scroll-snap-align: start; }
   .contact__content {
     margin-top: 5rem;
     display: flex;
