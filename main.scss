@@ -1,5 +1,5 @@
-
-$font-primary : 'Montserrat', sans-serif;
+$font-primary : 'Montserrat',
+sans-serif;
 
 $color-primary : #2d3436;
 
@@ -15,7 +15,7 @@ $smallest-bp: 500px;
 
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
@@ -24,38 +24,39 @@ $smallest-bp: 500px;
 
 .module {
     scroll-behavior: smooth;
-  }
+}
 
 
-html{
-    font-size: 10px;  // 1rem  = 10px
+html {
+    font-size: 10px; // 1rem  = 10px
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-    @media only screen and(max-width: $large-bp){
+    @media only screen and(max-width: $large-bp) {
         font-size: 9px;
     }
 
-    @media only screen and(max-width: $medium2-bp){
+    @media only screen and(max-width: $medium2-bp) {
         font-size: 7px;
     }
 
-    @media only screen and(max-width: $small-bp){
+    @media only screen and(max-width: $small-bp) {
         font-size: 6px;
     }
-    @media only screen and(max-width: $smallest-bp){
+
+    @media only screen and(max-width: $smallest-bp) {
         font-size: 5px;
     }
 
 
 }
 
-body{
-    color:$color-white;
+body {
+    color: $color-white;
     font-size: 1rem;
     font-family: $font-primary;
     font-size: 1.8rem;
-    line-height:1.7;
+    line-height: 1.7;
     width: 100%;
     background-color: #222;
     height: 100%;
@@ -63,7 +64,7 @@ body{
     // overflow-y: scroll;
 }
 
-.conatiner{
+.conatiner {
     display: grid;
     grid-template-columns: [full-start] minmax(8rem, 1fr) [center-start] repeat(8, 1fr) [center-end] minmax(8rem, 1fr) [full-end];
     // grid-template-rows: 10rem repeat(3, 1fr) 20rem;
@@ -74,15 +75,15 @@ body{
 
 
 
-.navbar{
-    &__items{
+.navbar {
+    &__items {
         grid-column: center-start / center-end;
         grid-row: 1/2;
         align-items: center;
 
 
 
-        @media only screen and(max-width: 450px){
+        @media only screen and(max-width: 450px) {
             grid-column: full-start / full-end;
             padding: 1.5rem 8rem;
         }
@@ -97,55 +98,55 @@ body{
         height: 8rem;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(33,33,33, .8);
+        background-color: rgba(33, 33, 33, .8);
         box-shadow: 0 2rem 3rem rgba(99, 151, 248, 0.01);
 
-        @media only screen and(max-width: 450px){
+        @media only screen and(max-width: 450px) {
             justify-content: space-between;
             align-items: center;
         }
     }
 
-    
-    &__link{
+
+    &__link {
         display: inline-block;
 
-        &-img{
-            width : 4rem;
+        &-img {
+            width: 4rem;
             height: 4rem;
         }
 
-        &-text{
+        &-text {
             font-size: 1.8rem;
             font-family: $font-primary;
             font-weight: 400;
             letter-spacing: 3px;
             text-decoration: none;
-            color:$color-white;
+            color: $color-white;
         }
     }
 
-    &__list{
+    &__list {
         list-style: none;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
-        
 
-        &-item{
+
+        &-item {
             margin-right: 3rem;
             font-size: 1.8rem;
 
-            @media only screen and(max-width: 450px){
+            @media only screen and(max-width: 450px) {
                 font-size: 1.6rem;
             }
 
-            & > a{
+            &>a {
                 text-decoration: none;
                 color: $color-white;
 
-                &:hover{
+                &:hover {
                     color: #1e90ff;
                 }
             }
@@ -155,115 +156,115 @@ body{
 
 
 
-.header{
+.header {
     grid-column: center-start / center-end;
-    grid-row : 2 / 3;
+    grid-row: 2 / 3;
     margin-bottom: 20rem;
     height: 80vh;
     // padding: 8rem 0 0 0;
     // scroll-snap-align: start;
 
 
-    @media only screen and(max-width: $medium2-bp){
+    @media only screen and(max-width: $medium2-bp) {
         margin-bottom: 30rem;
         grid-column: center-start / -2;
         text-align: center;
     }
 
-    @media only screen and(max-width: $smallest-bp){
+    @media only screen and(max-width: $smallest-bp) {
         margin-bottom: 45rem;
     }
 
 
-    &__content{
+    &__content {
         line-height: 1.2;
         padding: 15rem 0 0 0;
 
-        
 
-        @media only screen and(max-width: $medium2-bp){
+
+        @media only screen and(max-width: $medium2-bp) {
             padding: 15rem 0 0 0;
             text-align: center;
         }
 
-        @media only screen and(max-width: $small-bp){
+        @media only screen and(max-width: $small-bp) {
             padding: 25rem 0 0 0;
         }
 
-        @media only screen and(max-width: $small-bp){
+        @media only screen and(max-width: $small-bp) {
             padding: 30rem 0 0 0;
         }
 
 
 
-        &-text{
+        &-text {
             font-size: 12rem;
             font-family: $font-primary;
             color: $color-white;
             letter-spacing: 1rem;
             font-weight: 700;
 
-            @media only screen and(max-width: $large-bp){
+            @media only screen and(max-width: $large-bp) {
                 font-size: 10rem;
             }
 
-            @media only screen and(max-width: $medium-bp){
+            @media only screen and(max-width: $medium-bp) {
                 font-size: 8rem;
             }
 
-            @media only screen and(max-width: $medium2-bp){
+            @media only screen and(max-width: $medium2-bp) {
                 font-size: 9rem;
             }
 
-            @media only screen and(max-width: 700px){
+            @media only screen and(max-width: 700px) {
                 font-size: 8rem;
             }
 
-            @media only screen and(max-width: 450px){
+            @media only screen and(max-width: 450px) {
                 font-size: 6rem;
             }
 
-            @media only screen and(max-width: 340px){
+            @media only screen and(max-width: 340px) {
                 font-size: 5rem;
             }
 
-            
 
-            
 
-            &--1{
+
+
+            &--1 {
                 font-size: 5rem;
                 letter-spacing: 1.5rem;
-                background: -webkit-linear-gradient(top,#3742fa, #1e90ff);
+                background: -webkit-linear-gradient(top, #3742fa, #1e90ff);
                 -webkit-background-clip: text;
                 -webkit-text-stroke: 4px transparent;
                 color: #222;
 
-                @media only screen and(max-width: $medium-bp){
+                @media only screen and(max-width: $medium-bp) {
                     font-size: 4rem;
                 }
 
-                @media only screen and(max-width: $medium-bp){
+                @media only screen and(max-width: $medium-bp) {
                     font-size: 3rem;
                 }
 
-                @media only screen and(max-width: $medium2-bp){
+                @media only screen and(max-width: $medium2-bp) {
                     font-size: 4rem;
                 }
 
-                @media only screen and(max-width: 700px){
+                @media only screen and(max-width: 700px) {
                     font-size: 3rem;
                 }
 
-                @media only screen and(max-width: 450px){
+                @media only screen and(max-width: 450px) {
                     font-size: 2.2rem;
                 }
 
-                @media only screen and(max-width: 400px){
+                @media only screen and(max-width: 400px) {
                     font-size: 1.5rem;
                 }
 
-                @media only screen and(max-width: 340px){
+                @media only screen and(max-width: 340px) {
                     font-size: 1.3rem;
                 }
             }
@@ -271,18 +272,18 @@ body{
 
     }
 
-    &__btn{
+    &__btn {
         margin-top: 4rem;
         display: flex;
         justify-content: flex-start;
         align-items: center;
 
 
-        @media only screen and(max-width: $medium2-bp){
+        @media only screen and(max-width: $medium2-bp) {
             justify-content: center;
         }
 
-        &-btn{
+        &-btn {
             color: $color-white;
             font-family: $font-primary;
             font-weight: 400;
@@ -293,25 +294,25 @@ body{
             transition: .5s all ease-in-out;
             box-shadow: 0 2rem 3rem rgba(#1e90ff, .05);
 
-            &*:hover{
-                transform:scale(1);
+            &*:hover {
+                transform: scale(1);
             }
 
-            &:hover{
-                transform:scale(1.05);
+            &:hover {
+                transform: scale(1.05);
 
             }
 
             &--1,
-            &--2{
-                background-image: linear-gradient(to right,#3742fa, #1e90ff);
+            &--2 {
+                background-image: linear-gradient(to right, #3742fa, #1e90ff);
             }
-        
+
         }
     }
 }
 
-.title{
+.title {
     letter-spacing: .8rem;
     font-size: 3rem;
     padding: .5rem 1rem;
@@ -321,7 +322,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    &-1{
+    &-1 {
         font-size: 2rem;
         color: $color-white;
         font-weight: 700;
@@ -331,7 +332,7 @@ body{
         text-decoration: none;
     }
 
-    &-2{
+    &-2 {
         color: $color-white;
         background-color: #1e90ff;
         padding: .5rem 1rem;
@@ -340,7 +341,7 @@ body{
     }
 }
 
-.about{
+.about {
     grid-column: center-start / center-end;
     grid-row: 3 / 4;
     text-align: center;
@@ -348,37 +349,37 @@ body{
     padding: 8rem 0 0 0;
     // scroll-snap-align: start;
 
-    &__text{
+    &__text {
         margin-top: 5rem;
         font-size: 2rem;
-        letter-spacing:1px;
+        letter-spacing: 1px;
         font-family: $font-primary;
         color: inherit;
 
-        &-2{
+        &-2 {
             color: #1e90ff;
         }
 
-        & > a{
+        &>a {
             color: $color-white;
         }
     }
 }
 
-.project{
+.project {
     grid-column: center-start / center-end;
     grid-row: 4 / 5;
     padding: 8rem 0 0 0;
     // scroll-snap-align: start;
 
-    &__box{
+    &__box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 4rem;
         margin-top: 10rem;
-        
 
-        @media only screen and(max-width: $small-bp){
+
+        @media only screen and(max-width: $small-bp) {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
@@ -389,25 +390,26 @@ body{
 
     }
 
-    &__img{
+    &__img {
         width: 80%;
         height: 30rem;
         object-fit: cover;
-        
-        @media only screen and(max-width: $medium-bp){
+
+        @media only screen and(max-width: $medium-bp) {
             width: 100%;
         }
 
     }
 
-    &__content{
+    &__content {
         flex-basis: 25%;
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &-tech{
+
+        &-tech {
             margin: 10rem 2rem 1rem 0;
             background-color: #dfe6e9;
             border-radius: 3rem;
@@ -416,19 +418,19 @@ body{
 
         }
 
-        &-text{
+        &-text {
             text-align: center;
             margin-bottom: 2rem;
         }
 
-        &-btns{
+        &-btns {
             margin-top: 3rem;
             display: flex;
-            justify-content:flex-start;
+            justify-content: flex-start;
             align-items: center;
         }
 
-        &-btn{
+        &-btn {
             font-size: 1.4rem;
             background-color: transparent;
             border-radius: 3rem;
@@ -441,29 +443,29 @@ body{
             justify-content: space-between;
             align-items: center;
 
-            &__logo{
+            &__logo {
                 margin-right: 2px;
                 width: 1.4rem;
                 height: 1.4rem;
             }
 
-            
 
 
-            &--source{
-                margin-right:2rem;
+
+            &--source {
+                margin-right: 2rem;
                 background-color: #1e90ff;
                 border: 1px solid #1e90ff;
 
-                &:hover{
+                &:hover {
                     background-color: transparent;
                     border: 1px solid $color-white;
                 }
             }
 
-            &--website{
+            &--website {
 
-                &:hover{
+                &:hover {
                     background-color: #1e90ff;
                     border: 1px solid #1e90ff;
                 }
@@ -480,44 +482,43 @@ body{
 
 
 
-.contact{
+.contact {
     grid-column: center-start / center-end;
     grid-row: 9 / 10;
     // height: 80vh;
-    margin: 20rem 0 10rem 0;  
+    margin: 20rem 0 10rem 0;
     scroll-snap-align: start;
 
-    &__content{
+    &__content {
         margin-top: 5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        &-logo{
-            & > a {
+        &-logo {
+            &>a {
                 text-decoration: none;
             }
-            & > a > img{
+
+            &>a>img {
                 width: 2rem;
                 height: 2rem;
                 margin-right: 1rem;
-                
+
             }
         }
     }
 }
 
 
-.github-svg{
+.github-svg {
     width: 2rem;
     height: 2rem;
     fill: #fff;
 }
 
 
-section{
-    
-}
+section {}
 
 // #header{
 //     margin-top: 50rem;
@@ -562,49 +563,30 @@ section{
 
 
 
-.ml-1{
+.ml-1 {
     margin-left: 1rem;
 }
 
-.ml-3{
+.ml-3 {
     margin-left: 3rem;
 }
 
-.ml-5{
+.ml-5 {
     margin-left: 5rem;
 }
 
-.mr-1{
+.mr-1 {
     margin-right: 1rem;
 }
 
-.mr-3{
+.mr-3 {
     margin-right: 3rem;
 }
 
-.mr-5{
+.mr-5 {
     margin-right: 5rem;
 }
-.mt-10{
+
+.mt-10 {
     margin-top: 10rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
